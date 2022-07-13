@@ -23,7 +23,6 @@ namespace HotelListing.Repository
         public void Dispose()
         {
             _context.Dispose();
-            GC.SuppressFinalize(this);
         }
 
         public async Task Save()
